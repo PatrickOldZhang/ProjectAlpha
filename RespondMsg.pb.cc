@@ -14,23 +14,23 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-class RespondtMsgDefaultTypeInternal {
+class RespondMsgDefaultTypeInternal {
  public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RespondtMsg> _instance;
-} _RespondtMsg_default_instance_;
-static void InitDefaultsscc_info_RespondtMsg_RespondMsg_2eproto() {
+  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RespondMsg> _instance;
+} _RespondMsg_default_instance_;
+static void InitDefaultsscc_info_RespondMsg_RespondMsg_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   {
-    void* ptr = &::_RespondtMsg_default_instance_;
-    new (ptr) ::RespondtMsg();
+    void* ptr = &::_RespondMsg_default_instance_;
+    new (ptr) ::RespondMsg();
     ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
   }
-  ::RespondtMsg::InitAsDefaultInstance();
+  ::RespondMsg::InitAsDefaultInstance();
 }
 
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RespondtMsg_RespondMsg_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RespondtMsg_RespondMsg_2eproto}, {}};
+::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RespondMsg_RespondMsg_2eproto =
+    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RespondMsg_RespondMsg_2eproto}, {}};
 
 static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_RespondMsg_2eproto[1];
 static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_RespondMsg_2eproto = nullptr;
@@ -38,39 +38,38 @@ static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_s
 
 const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_RespondMsg_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::RespondtMsg, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::RespondMsg, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::RespondtMsg, rv_),
-  PROTOBUF_FIELD_OFFSET(::RespondtMsg, seckeyid_),
-  PROTOBUF_FIELD_OFFSET(::RespondtMsg, clientid_),
-  PROTOBUF_FIELD_OFFSET(::RespondtMsg, serverid_),
-  PROTOBUF_FIELD_OFFSET(::RespondtMsg, data_),
+  PROTOBUF_FIELD_OFFSET(::RespondMsg, rv_),
+  PROTOBUF_FIELD_OFFSET(::RespondMsg, seckeyid_),
+  PROTOBUF_FIELD_OFFSET(::RespondMsg, clientid_),
+  PROTOBUF_FIELD_OFFSET(::RespondMsg, serverid_),
+  PROTOBUF_FIELD_OFFSET(::RespondMsg, data_),
 };
 static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, sizeof(::RespondtMsg)},
+  { 0, -1, sizeof(::RespondMsg)},
 };
 
 static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_RespondtMsg_default_instance_),
+  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::_RespondMsg_default_instance_),
 };
 
 const char descriptor_table_protodef_RespondMsg_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\020RespondMsg.proto\"]\n\013RespondtMsg\022\n\n\002rv\030"
-  "\001 \001(\010\022\020\n\010seckeyid\030\002 \001(\005\022\020\n\010clientId\030\003 \001("
-  "\t\022\020\n\010serverId\030\004 \001(\t\022\014\n\004data\030\005 \001(\tb\006proto"
-  "3"
+  "\n\020RespondMsg.proto\"\\\n\nRespondMsg\022\n\n\002rv\030\001"
+  " \001(\010\022\020\n\010seckeyid\030\002 \001(\005\022\020\n\010clientId\030\003 \001(\t"
+  "\022\020\n\010serverId\030\004 \001(\t\022\014\n\004data\030\005 \001(\tb\006proto3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_RespondMsg_2eproto_deps[1] = {
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_RespondMsg_2eproto_sccs[1] = {
-  &scc_info_RespondtMsg_RespondMsg_2eproto.base,
+  &scc_info_RespondMsg_RespondMsg_2eproto.base,
 };
 static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_RespondMsg_2eproto_once;
 static bool descriptor_table_RespondMsg_2eproto_initialized = false;
 const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_RespondMsg_2eproto = {
-  &descriptor_table_RespondMsg_2eproto_initialized, descriptor_table_protodef_RespondMsg_2eproto, "RespondMsg.proto", 121,
+  &descriptor_table_RespondMsg_2eproto_initialized, descriptor_table_protodef_RespondMsg_2eproto, "RespondMsg.proto", 120,
   &descriptor_table_RespondMsg_2eproto_once, descriptor_table_RespondMsg_2eproto_sccs, descriptor_table_RespondMsg_2eproto_deps, 1, 0,
   schemas, file_default_instances, TableStruct_RespondMsg_2eproto::offsets,
   file_level_metadata_RespondMsg_2eproto, 1, file_level_enum_descriptors_RespondMsg_2eproto, file_level_service_descriptors_RespondMsg_2eproto,
@@ -81,18 +80,18 @@ static bool dynamic_init_dummy_RespondMsg_2eproto = (  ::PROTOBUF_NAMESPACE_ID::
 
 // ===================================================================
 
-void RespondtMsg::InitAsDefaultInstance() {
+void RespondMsg::InitAsDefaultInstance() {
 }
-class RespondtMsg::_Internal {
+class RespondMsg::_Internal {
  public:
 };
 
-RespondtMsg::RespondtMsg()
+RespondMsg::RespondMsg()
   : ::PROTOBUF_NAMESPACE_ID::Message(), _internal_metadata_(nullptr) {
   SharedCtor();
-  // @@protoc_insertion_point(constructor:RespondtMsg)
+  // @@protoc_insertion_point(constructor:RespondMsg)
 }
-RespondtMsg::RespondtMsg(const RespondtMsg& from)
+RespondMsg::RespondMsg(const RespondMsg& from)
   : ::PROTOBUF_NAMESPACE_ID::Message(),
       _internal_metadata_(nullptr) {
   _internal_metadata_.MergeFrom(from._internal_metadata_);
@@ -111,11 +110,11 @@ RespondtMsg::RespondtMsg(const RespondtMsg& from)
   ::memcpy(&rv_, &from.rv_,
     static_cast<size_t>(reinterpret_cast<char*>(&seckeyid_) -
     reinterpret_cast<char*>(&rv_)) + sizeof(seckeyid_));
-  // @@protoc_insertion_point(copy_constructor:RespondtMsg)
+  // @@protoc_insertion_point(copy_constructor:RespondMsg)
 }
 
-void RespondtMsg::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RespondtMsg_RespondMsg_2eproto.base);
+void RespondMsg::SharedCtor() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_RespondMsg_RespondMsg_2eproto.base);
   clientid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   serverid_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   data_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
@@ -124,28 +123,28 @@ void RespondtMsg::SharedCtor() {
       reinterpret_cast<char*>(&rv_)) + sizeof(seckeyid_));
 }
 
-RespondtMsg::~RespondtMsg() {
-  // @@protoc_insertion_point(destructor:RespondtMsg)
+RespondMsg::~RespondMsg() {
+  // @@protoc_insertion_point(destructor:RespondMsg)
   SharedDtor();
 }
 
-void RespondtMsg::SharedDtor() {
+void RespondMsg::SharedDtor() {
   clientid_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   serverid_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
   data_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
 
-void RespondtMsg::SetCachedSize(int size) const {
+void RespondMsg::SetCachedSize(int size) const {
   _cached_size_.Set(size);
 }
-const RespondtMsg& RespondtMsg::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RespondtMsg_RespondMsg_2eproto.base);
+const RespondMsg& RespondMsg::default_instance() {
+  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RespondMsg_RespondMsg_2eproto.base);
   return *internal_default_instance();
 }
 
 
-void RespondtMsg::Clear() {
-// @@protoc_insertion_point(message_clear_start:RespondtMsg)
+void RespondMsg::Clear() {
+// @@protoc_insertion_point(message_clear_start:RespondMsg)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -159,7 +158,7 @@ void RespondtMsg::Clear() {
   _internal_metadata_.Clear();
 }
 
-const char* RespondtMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* RespondMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     ::PROTOBUF_NAMESPACE_ID::uint32 tag;
@@ -185,7 +184,7 @@ const char* RespondtMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           auto str = _internal_mutable_clientid();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RespondtMsg.clientId"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RespondMsg.clientId"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -194,7 +193,7 @@ const char* RespondtMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           auto str = _internal_mutable_serverid();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RespondtMsg.serverId"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RespondMsg.serverId"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -203,7 +202,7 @@ const char* RespondtMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           auto str = _internal_mutable_data();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RespondtMsg.data"));
+          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RespondMsg.data"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -227,9 +226,9 @@ failure:
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RespondtMsg::_InternalSerialize(
+::PROTOBUF_NAMESPACE_ID::uint8* RespondMsg::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:RespondtMsg)
+  // @@protoc_insertion_point(serialize_to_array_start:RespondMsg)
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -250,7 +249,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_clientid().data(), static_cast<int>(this->_internal_clientid().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "RespondtMsg.clientId");
+      "RespondMsg.clientId");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_clientid(), target);
   }
@@ -260,7 +259,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_serverid().data(), static_cast<int>(this->_internal_serverid().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "RespondtMsg.serverId");
+      "RespondMsg.serverId");
     target = stream->WriteStringMaybeAliased(
         4, this->_internal_serverid(), target);
   }
@@ -270,7 +269,7 @@ failure:
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_data().data(), static_cast<int>(this->_internal_data().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "RespondtMsg.data");
+      "RespondMsg.data");
     target = stream->WriteStringMaybeAliased(
         5, this->_internal_data(), target);
   }
@@ -279,12 +278,12 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields(), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:RespondtMsg)
+  // @@protoc_insertion_point(serialize_to_array_end:RespondMsg)
   return target;
 }
 
-size_t RespondtMsg::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:RespondtMsg)
+size_t RespondMsg::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:RespondMsg)
   size_t total_size = 0;
 
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -333,23 +332,23 @@ size_t RespondtMsg::ByteSizeLong() const {
   return total_size;
 }
 
-void RespondtMsg::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:RespondtMsg)
+void RespondMsg::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:RespondMsg)
   GOOGLE_DCHECK_NE(&from, this);
-  const RespondtMsg* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RespondtMsg>(
+  const RespondMsg* source =
+      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RespondMsg>(
           &from);
   if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RespondtMsg)
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:RespondMsg)
     ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:RespondtMsg)
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:RespondMsg)
     MergeFrom(*source);
   }
 }
 
-void RespondtMsg::MergeFrom(const RespondtMsg& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:RespondtMsg)
+void RespondMsg::MergeFrom(const RespondMsg& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:RespondMsg)
   GOOGLE_DCHECK_NE(&from, this);
   _internal_metadata_.MergeFrom(from._internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
@@ -375,25 +374,25 @@ void RespondtMsg::MergeFrom(const RespondtMsg& from) {
   }
 }
 
-void RespondtMsg::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:RespondtMsg)
+void RespondMsg::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:RespondMsg)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-void RespondtMsg::CopyFrom(const RespondtMsg& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:RespondtMsg)
+void RespondMsg::CopyFrom(const RespondMsg& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:RespondMsg)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool RespondtMsg::IsInitialized() const {
+bool RespondMsg::IsInitialized() const {
   return true;
 }
 
-void RespondtMsg::InternalSwap(RespondtMsg* other) {
+void RespondMsg::InternalSwap(RespondMsg* other) {
   using std::swap;
   _internal_metadata_.Swap(&other->_internal_metadata_);
   clientid_.Swap(&other->clientid_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
@@ -406,15 +405,15 @@ void RespondtMsg::InternalSwap(RespondtMsg* other) {
   swap(seckeyid_, other->seckeyid_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata RespondtMsg::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata RespondMsg::GetMetadata() const {
   return GetMetadataStatic();
 }
 
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::RespondtMsg* Arena::CreateMaybeMessage< ::RespondtMsg >(Arena* arena) {
-  return Arena::CreateInternal< ::RespondtMsg >(arena);
+template<> PROTOBUF_NOINLINE ::RespondMsg* Arena::CreateMaybeMessage< ::RespondMsg >(Arena* arena) {
+  return Arena::CreateInternal< ::RespondMsg >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

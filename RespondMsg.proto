@@ -1,10 +1,10 @@
 syntax = "proto3";
 
-message RespondtMsg
+message RespondMsg
 {
-    bool rv=1;  // 返回值
+    int32 rv=1;  // 返回值
     int32 seckeyid=2;   // 对称加密秘钥 keysn
-    string clientId=3;  // 客户端编号
-    string serverId=4;  // 服务器编号
-    string data=5;      // 服务器端随机数
+    bytes clientId=3;  // 客户端编号
+    bytes serverId=4;  // 服务器编号
+    bytes data=5;      // 服务器端随机数
 }

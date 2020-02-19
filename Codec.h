@@ -4,8 +4,8 @@ using namespace std;
 class Codec
 {
 public:
-	Codec() {};
-	~Codec() {};
+	Codec();
+	virtual ~Codec();
 	virtual string encodeMsg()=0;
 	virtual void* decodeMsg()=0;
 };

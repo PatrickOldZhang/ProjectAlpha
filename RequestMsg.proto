@@ -3,8 +3,8 @@ syntax ="proto3";
 message RequestMsg
 {
     int32 cmdType=1;
-    string clientId=2;
-    string serverId=3;
-    string sign=4;
-    string data=5;  
+    bytes clientId=2;
+    bytes serverId=3;
+    bytes sign=4;
+    bytes data=5;  
 }
