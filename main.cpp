@@ -20,12 +20,13 @@ void* decodeMsg(Codec* c)
 
 int main()
 {
+
 	RequestInfo reqInfo;
 	reqInfo.cmd = 9;
 	reqInfo.clientID = "Manu Ginobili";
 	reqInfo.serverID = "Agentina";
 	reqInfo.data = "Score Guard";
-	reqInfo.sign = "Team Winner";
+	reqInfo.sign = "ÎÒÌ«ÄÑÁË";
 	Request req(reqInfo);
 	// ±àÂë
 	string reqMsg = encodeMsg(&req);

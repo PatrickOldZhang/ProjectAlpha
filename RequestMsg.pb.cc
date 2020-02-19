@@ -58,8 +58,8 @@ static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] =
 
 const char descriptor_table_protodef_RequestMsg_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\020RequestMsg.proto\"]\n\nRequestMsg\022\017\n\007cmdT"
-  "ype\030\001 \001(\005\022\020\n\010clientId\030\002 \001(\t\022\020\n\010serverId\030"
-  "\003 \001(\t\022\014\n\004sign\030\004 \001(\t\022\014\n\004data\030\005 \001(\tb\006proto"
+  "ype\030\001 \001(\005\022\020\n\010clientId\030\002 \001(\014\022\020\n\010serverId\030"
+  "\003 \001(\014\022\014\n\004sign\030\004 \001(\014\022\014\n\004data\030\005 \001(\014b\006proto"
   "3"
   ;
 static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_RequestMsg_2eproto_deps[1] = {
@@ -174,39 +174,35 @@ const char* RequestMsg::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID:
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string clientId = 2;
+      // bytes clientId = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
           auto str = _internal_mutable_clientid();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RequestMsg.clientId"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string serverId = 3;
+      // bytes serverId = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
           auto str = _internal_mutable_serverid();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RequestMsg.serverId"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string sign = 4;
+      // bytes sign = 4;
       case 4:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
           auto str = _internal_mutable_sign();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RequestMsg.sign"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
-      // string data = 5;
+      // bytes data = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 42)) {
           auto str = _internal_mutable_data();
           ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          CHK_(::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "RequestMsg.data"));
           CHK_(ptr);
         } else goto handle_unusual;
         continue;
@@ -242,43 +238,27 @@ failure:
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteInt32ToArray(1, this->_internal_cmdtype(), target);
   }
 
-  // string clientId = 2;
+  // bytes clientId = 2;
   if (this->clientid().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_clientid().data(), static_cast<int>(this->_internal_clientid().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "RequestMsg.clientId");
-    target = stream->WriteStringMaybeAliased(
+    target = stream->WriteBytesMaybeAliased(
         2, this->_internal_clientid(), target);
   }
 
-  // string serverId = 3;
+  // bytes serverId = 3;
   if (this->serverid().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_serverid().data(), static_cast<int>(this->_internal_serverid().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "RequestMsg.serverId");
-    target = stream->WriteStringMaybeAliased(
+    target = stream->WriteBytesMaybeAliased(
         3, this->_internal_serverid(), target);
   }
 
-  // string sign = 4;
+  // bytes sign = 4;
   if (this->sign().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_sign().data(), static_cast<int>(this->_internal_sign().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "RequestMsg.sign");
-    target = stream->WriteStringMaybeAliased(
+    target = stream->WriteBytesMaybeAliased(
         4, this->_internal_sign(), target);
   }
 
-  // string data = 5;
+  // bytes data = 5;
   if (this->data().size() > 0) {
-    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_data().data(), static_cast<int>(this->_internal_data().length()),
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "RequestMsg.data");
-    target = stream->WriteStringMaybeAliased(
+    target = stream->WriteBytesMaybeAliased(
         5, this->_internal_data(), target);
   }
 
@@ -298,31 +278,31 @@ size_t RequestMsg::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string clientId = 2;
+  // bytes clientId = 2;
   if (this->clientid().size() > 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_clientid());
   }
 
-  // string serverId = 3;
+  // bytes serverId = 3;
   if (this->serverid().size() > 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_serverid());
   }
 
-  // string sign = 4;
+  // bytes sign = 4;
   if (this->sign().size() > 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_sign());
   }
 
-  // string data = 5;
+  // bytes data = 5;
   if (this->data().size() > 0) {
     total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::BytesSize(
         this->_internal_data());
   }
 

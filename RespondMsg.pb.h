@@ -175,13 +175,13 @@ class RespondMsg :
     kRvFieldNumber = 1,
     kSeckeyidFieldNumber = 2,
   };
-  // string clientId = 3;
+  // bytes clientId = 3;
   void clear_clientid();
   const std::string& clientid() const;
   void set_clientid(const std::string& value);
   void set_clientid(std::string&& value);
   void set_clientid(const char* value);
-  void set_clientid(const char* value, size_t size);
+  void set_clientid(const void* value, size_t size);
   std::string* mutable_clientid();
   std::string* release_clientid();
   void set_allocated_clientid(std::string* clientid);
@@ -191,13 +191,13 @@ class RespondMsg :
   std::string* _internal_mutable_clientid();
   public:
 
-  // string serverId = 4;
+  // bytes serverId = 4;
   void clear_serverid();
   const std::string& serverid() const;
   void set_serverid(const std::string& value);
   void set_serverid(std::string&& value);
   void set_serverid(const char* value);
-  void set_serverid(const char* value, size_t size);
+  void set_serverid(const void* value, size_t size);
   std::string* mutable_serverid();
   std::string* release_serverid();
   void set_allocated_serverid(std::string* serverid);
@@ -207,13 +207,13 @@ class RespondMsg :
   std::string* _internal_mutable_serverid();
   public:
 
-  // string data = 5;
+  // bytes data = 5;
   void clear_data();
   const std::string& data() const;
   void set_data(const std::string& value);
   void set_data(std::string&& value);
   void set_data(const char* value);
-  void set_data(const char* value, size_t size);
+  void set_data(const void* value, size_t size);
   std::string* mutable_data();
   std::string* release_data();
   void set_allocated_data(std::string* data);
@@ -223,13 +223,13 @@ class RespondMsg :
   std::string* _internal_mutable_data();
   public:
 
-  // bool rv = 1;
+  // int32 rv = 1;
   void clear_rv();
-  bool rv() const;
-  void set_rv(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 rv() const;
+  void set_rv(::PROTOBUF_NAMESPACE_ID::int32 value);
   private:
-  bool _internal_rv() const;
-  void _internal_set_rv(bool value);
+  ::PROTOBUF_NAMESPACE_ID::int32 _internal_rv() const;
+  void _internal_set_rv(::PROTOBUF_NAMESPACE_ID::int32 value);
   public:
 
   // int32 seckeyid = 2;
@@ -249,7 +249,7 @@ class RespondMsg :
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr clientid_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr serverid_;
   ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr data_;
-  bool rv_;
+  ::PROTOBUF_NAMESPACE_ID::int32 rv_;
   ::PROTOBUF_NAMESPACE_ID::int32 seckeyid_;
   mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   friend struct ::TableStruct_RespondMsg_2eproto;
@@ -265,22 +265,22 @@ class RespondMsg :
 #endif  // __GNUC__
 // RespondMsg
 
-// bool rv = 1;
+// int32 rv = 1;
 inline void RespondMsg::clear_rv() {
-  rv_ = false;
+  rv_ = 0;
 }
-inline bool RespondMsg::_internal_rv() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 RespondMsg::_internal_rv() const {
   return rv_;
 }
-inline bool RespondMsg::rv() const {
+inline ::PROTOBUF_NAMESPACE_ID::int32 RespondMsg::rv() const {
   // @@protoc_insertion_point(field_get:RespondMsg.rv)
   return _internal_rv();
 }
-inline void RespondMsg::_internal_set_rv(bool value) {
+inline void RespondMsg::_internal_set_rv(::PROTOBUF_NAMESPACE_ID::int32 value) {
   
   rv_ = value;
 }
-inline void RespondMsg::set_rv(bool value) {
+inline void RespondMsg::set_rv(::PROTOBUF_NAMESPACE_ID::int32 value) {
   _internal_set_rv(value);
   // @@protoc_insertion_point(field_set:RespondMsg.rv)
 }
@@ -305,7 +305,7 @@ inline void RespondMsg::set_seckeyid(::PROTOBUF_NAMESPACE_ID::int32 value) {
   // @@protoc_insertion_point(field_set:RespondMsg.seckeyid)
 }
 
-// string clientId = 3;
+// bytes clientId = 3;
 inline void RespondMsg::clear_clientid() {
   clientid_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -340,7 +340,7 @@ inline void RespondMsg::set_clientid(const char* value) {
   clientid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:RespondMsg.clientId)
 }
-inline void RespondMsg::set_clientid(const char* value, size_t size) {
+inline void RespondMsg::set_clientid(const void* value, size_t size) {
   
   clientid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
@@ -365,7 +365,7 @@ inline void RespondMsg::set_allocated_clientid(std::string* clientid) {
   // @@protoc_insertion_point(field_set_allocated:RespondMsg.clientId)
 }
 
-// string serverId = 4;
+// bytes serverId = 4;
 inline void RespondMsg::clear_serverid() {
   serverid_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -400,7 +400,7 @@ inline void RespondMsg::set_serverid(const char* value) {
   serverid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:RespondMsg.serverId)
 }
-inline void RespondMsg::set_serverid(const char* value, size_t size) {
+inline void RespondMsg::set_serverid(const void* value, size_t size) {
   
   serverid_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
@@ -425,7 +425,7 @@ inline void RespondMsg::set_allocated_serverid(std::string* serverid) {
   // @@protoc_insertion_point(field_set_allocated:RespondMsg.serverId)
 }
 
-// string data = 5;
+// bytes data = 5;
 inline void RespondMsg::clear_data() {
   data_.ClearToEmptyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
 }
@@ -460,7 +460,7 @@ inline void RespondMsg::set_data(const char* value) {
   data_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
   // @@protoc_insertion_point(field_set_char:RespondMsg.data)
 }
-inline void RespondMsg::set_data(const char* value, size_t size) {
+inline void RespondMsg::set_data(const void* value, size_t size) {
   
   data_.SetNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(),
       ::std::string(reinterpret_cast<const char*>(value), size));
