@@ -51,7 +51,7 @@ string Request::encodeMsg(void)
 {
 	string output;
 	m_msg.SerializeToString(&output);
-	return ::std::move(output);
+	return output;
 }
 
 void* Request::decodeMsg(void)

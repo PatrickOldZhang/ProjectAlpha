@@ -22,10 +22,10 @@ int main()
 {
 	RequestInfo reqInfo;
 	reqInfo.cmd = 9;
-	reqInfo.clientID = "OncePice";
-	reqInfo.serverID = "Luffy";
-	reqInfo.data = "我是要成为海贼王的男人";
-	reqInfo.sign = "哈哈,呵呵,嘿嘿";
+	reqInfo.clientID = "Manu Ginobili";
+	reqInfo.serverID = "Agentina";
+	reqInfo.data = "Score Guard";
+	reqInfo.sign = "Team Winner";
 	Request req(reqInfo);
 	// 编码
 	string reqMsg = encodeMsg(&req);
@@ -43,9 +43,9 @@ int main()
 	////////////////////////////////////////////////
 	RespondInfo resInfo;
 	resInfo.status = false;
-	resInfo.clientID = "宇智波佐助";
-	resInfo.serverID = "宇智波鼬";
-	resInfo.data = "火影忍者";
+	resInfo.clientID = "Tim Duncan";
+	resInfo.serverID = "Spurs";
+	resInfo.data = "Power Forward";
 	resInfo.seckeyID = 123;
 	Response res(resInfo);
 	// 编码
