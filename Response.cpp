@@ -20,6 +20,11 @@ Response::Response(RespondInfo& info)
 
 }
 
+Response::Response(RespondInfo* info)
+{
+	initMessage(info);
+}
+
 void Response::initMessage(string encStr)
 {
 	m_encStr = encStr;
@@ -33,6 +38,15 @@ void Response::initMessage(RespondInfo& info)
 	m_msg.set_serverid(info.serverID);
 	m_msg.set_data(info.data);
 
+}
+
+void Response::initMessage(RespondInfo* info)
+{
+	m_msg.set_rv(info->status);
+	m_msg.set_seckeyid(info->seckeyID);
+	m_msg.set_clientid(info->clientID);
+	m_msg.set_serverid(info->serverID);
+	m_msg.set_data(info->data);
 }
 
 void Response::initMessage(int status, int seckey, string clientID, string severID, string data)

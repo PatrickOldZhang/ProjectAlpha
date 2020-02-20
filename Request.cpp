@@ -2,7 +2,7 @@
 
 Request::Request()
 {
-
+	
 }
 
 Request::Request(string encStr)
@@ -11,6 +11,11 @@ Request::Request(string encStr)
 }
 
 Request::Request(RequestInfo& info)
+{
+	initMessage(info);
+}
+
+Request::Request(RequestInfo* info)
 {
 	initMessage(info);
 }
@@ -39,6 +44,15 @@ void Request::initMessage(RequestInfo& info)
 	m_msg.set_sign(info.sign);
 	m_msg.set_data(info.data);
 
+}
+
+void Request::initMessage(RequestInfo* info)
+{
+	m_msg.set_cmdtype(info->cmd);
+	m_msg.set_clientid(info->clientID);
+	m_msg.set_serverid(info->serverID);
+	m_msg.set_sign(info->sign);
+	m_msg.set_data(info->data);
 }
 
 

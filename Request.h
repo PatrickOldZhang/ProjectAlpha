@@ -23,9 +23,11 @@ public:
 	Request();
 	Request(string m_encStr);
 	Request(RequestInfo& info);
+	Request(RequestInfo* info);
 	Request(int cmd, string clientID, string serverID, string sign, string data);
 	void initMessage(string encStr);
 	void initMessage(RequestInfo& info);
+	void initMessage(RequestInfo* info);
 	void initMessage(int cmd, string clientID, string severID, string sign, string data);
 	string encodeMsg(void);
 	void* decodeMsg(void);

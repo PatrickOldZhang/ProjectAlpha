@@ -25,8 +25,10 @@ public:
 	Response(string encStr);
 	Response(int status, int seckeyID, string clientID, string severID, string data);
 	Response(RespondInfo& info);
+	Response(RespondInfo* info);
 	void initMessage(string encStr);
 	void initMessage(RespondInfo& info);
+	void initMessage(RespondInfo* info);
 	void initMessage(int status, int seckey, string clientID, string severID, string data);
 	string encodeMsg(void);
 	void* decodeMsg(void);
